@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
-import back from './assets/img1.jpg'
 import back1 from './assets/img2.jpg'
-import { BsSearch } from 'react-icons/bs'
+import back from './assets/img1.jpg'
 import { BsFillArrowRightCircleFill } from 'react-icons/bs'
+import Navbar from "./component/Navbar"
 
 function App() {
 
@@ -15,8 +15,6 @@ function App() {
     justifyContent: "center",
     alignItems: "center",
     backgroundAttachment: "fixed",
-
-
   }
   const myStyle1 = {
     backgroundImage: `url(${back1})`,
@@ -27,25 +25,13 @@ function App() {
     justifyContent: "center",
     alignItems: "center",
     backgroundAttachment: "fixed",
-
-
+    marginTop: "-135px",
   }
   return (
     <>
       <section className="contain">
         <div className="container" style={myStyle}>
-          <div className="title">
-            <Link to='/' style={{ textDecoration: "none", color: "wheat", fontSize: "19px" }}>Home</Link>
-          </div>
-          <div className="title" style={{ position: "relative", left: "1rem" }}>
-            <Link to='/' className="main">About Us</Link>
-            <Link to='/' className="main"> Blog</Link>
-            <Link to='/' className="main">Contact Us</Link>
-          </div>
-          <div className="title" style={{ position: "relative", left: "200px" }}>
-            <input type="text" placeholder=".............." className="inp" />
-            <button><BsSearch /></button>
-          </div>
+          <Navbar />
         </div>
         <div className="tit">
           <div className="head">
@@ -57,22 +43,12 @@ function App() {
             <p style={{ justifyContent: "center", position: "relative", right: "220px", color: "wheat", fontSize: "15px" }}>Explore more <BsFillArrowRightCircleFill style={{ justifyContent: "center", alignItems: "center" }} /> </p>
           </div>
         </div>
+
       </section>
 
-      <section className="about" style={myStyle1}>
-        <div className="container">
-          <div className="title">
-            <Link to='/' style={{ textDecoration: "none", color: "wheat", fontSize: "19px" }}>Home</Link>
-          </div>
-          <div className="title" style={{ position: "relative", left: "1rem" }}>
-            <Link to='/' className="main">About Us</Link>
-            <Link to='/' className="main"> Blog</Link>
-            <Link to='/' className="main">Contact Us</Link>
-          </div>
-          <div className="title" style={{ position: "relative", left: "200px" }}>
-            <input type="text" placeholder=".............." className="inp" />
-            <button><BsSearch /></button>
-          </div>
+      <section className="about" >
+        <div className="abt" style={myStyle1}>
+           <Navbar />
         </div>
         <div className="tit">
           <div className="head">
@@ -84,6 +60,10 @@ function App() {
             <p style={{ justifyContent: "center", position: "relative", right: "220px", color: "wheat", fontSize: "15px" }}>Explore more <BsFillArrowRightCircleFill style={{ justifyContent: "center", alignItems: "center" }} /> </p>
           </div>
         </div>
+       
+        
+
+
       </section>
 
 
