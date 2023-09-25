@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+
+}
+
+.title {
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  top: -220px;
+  left: -200px;
+  margin-right: 20px;
+  margin-left: 40px;
+}
+
+.main{
+  text-decoration: none;
+  color: wheat;
+  display: flex;
+  padding-right: 30px;
+  font-size: 15px;
+}
+
+.inp{
+  border-radius: 5px;
+  outline-style: none;
+}
+
+.tit{
+  position: relative;
+  top: -350px;
+  text-align: center;
+  justify-content: center;
+}
+
+.para{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  text-align: center;
+  align-items: center;
+}
+
