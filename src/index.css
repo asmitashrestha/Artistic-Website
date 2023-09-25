@@ -66,6 +66,11 @@
 .para , .head{
   animation-name: fadeIn;
   animation-duration: 1s; 
-  animation-delay: 0.5s;   
+  animation-delay: 2s;   
   animation-fill-mode: forwards;
+}
+
+.cont p{
+  color: white;
+  font-size: 15px;
 }

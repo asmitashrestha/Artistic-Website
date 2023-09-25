@@ -47,8 +47,8 @@ function App() {
       </section>
 
       <section className="about" >
-        <div className="abt" style={myStyle1}>
-           <Navbar />
+        <div style={myStyle1}>
+          <Navbar />
         </div>
         <div className="tit">
           <div className="head">
@@ -60,11 +60,29 @@ function App() {
             <p style={{ justifyContent: "center", position: "relative", right: "220px", color: "wheat", fontSize: "15px" }}>Explore more <BsFillArrowRightCircleFill style={{ justifyContent: "center", alignItems: "center" }} /> </p>
           </div>
         </div>
-       
-        
-
-
       </section>
+
+      
+        <div style={{ backgroundColor: "black", width: "1300px", height: "600px", marginTop: "-134px", backgroundPosition: "fixed" }}>
+          <Navbar/>
+          <div className="cont">
+            <p style={{ fontSize:"45px"}}>We make nature <br /> accessible</p>
+            <p>Welcome to the world <br /> of impressive beauty. <br /> harmony, and respect to nature.</p>
+          </div>
+
+          <div className="feature" style={{color:"white"}}>
+            <p>01</p>
+            <h2>Vehicle free zone</h2>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing <br/>  elit.
+            Ipsam ad quo autem! Vel est ipsa <br/> dolorum id at,praesentium odit?</p>
+            <p>Learn more <BsFillArrowRightCircleFill/></p>
+          </div>
+        </div>
+
+    
+
+
+
 
 
     </>
