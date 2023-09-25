@@ -37,7 +37,8 @@
   position: relative;
   top: -350px;
   text-align: center;
-  justify-content: center;
+  justify-content: center; 
+  margin-bottom: 0px;
 }
 
 .para{
@@ -46,5 +47,25 @@
   padding-top: 40px;
   text-align: center;
   align-items: center;
+  transition-delay: 1s;
+  opacity: 0;
 }
 
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+.head{
+  opacity: 0;
+}
+
+.para , .head{
+  animation-name: fadeIn;
+  animation-duration: 1s; 
+  animation-delay: 0.5s;   
+  animation-fill-mode: forwards;
+}
